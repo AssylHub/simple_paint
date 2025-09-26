@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188501020543",
+    "project_id": "simple-painter-a105a",
+    "storage_bucket": "simple-painter-a105a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188501020543:android:1ba24033ad34c2231e944a",
+        "android_client_info": {
+          "package_name": "com.example.simple_paint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb8T7mzuUGcdWYFHowqJTYh1p-9qW8eco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

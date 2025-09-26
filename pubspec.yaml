@@ -1,0 +1,179 @@
+name: simple_paint
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.7.0
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  go_router: ^14.1.2
+  gap: ^3.0.1
+  # firebase_core: ^4.1.1
+  fpdart: ^1.1.1
+  freezed_annotation: ^2.4.0
+  json_annotation: ^4.9.0
+  injectable_generator: ^2.6.1
+  # firebase_auth: ^6.1.0
+  talker: ^4.5.4
+  talker_flutter: ^4.5.4
+  talker_bloc_logger: ^4.5.4
+  flutter_bloc: ^9.1.1
+  get_it: ^8.2.0
+  injectable: ^2.5.1
+  freezed: ^2.5.2
+  flutter_dotenv: ^6.0.0
+  file_picker: ^10.3.3
+  http: ^1.5.0
+  cloud_firestore: ^5.6.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # freezed: 3.0.0
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.10
+  flutter_gen_runner: ^5.12.0
+  json_serializable: ^6.8.0
+
+
+# ========================
+# Конфигурация Flutter приложения
+# ========================
+flutter:
+  # Использование Material Design компонентов
+  uses-material-design: true
+  # Включить автогенерацию локализации
+  generate: true
+
+  # ========================
+  # Ресурсы приложения
+  # ========================
+  assets:
+    - .env
+    # Изображения и графические ресурсы
+    - assets/images/
+    # Иконки приложения
+    - assets/icons/
+    # Ресурсы платформ
+    # - assets/platforms/
+    # Общие шрифты
+    - assets/fonts/
+    # Семейство шрифтов Inter
+    - assets/fonts/PressStart/
+    # Семейство шрифтов InterTight
+    - assets/fonts/Roboto/
+
+  # ========================
+  # Конфигурация шрифтов
+  # ========================
+  fonts:
+    # Press Start font family
+    - family: PressStart
+      fonts:
+        - asset: assets/fonts/PressStart/PressStart2P-Regular.ttf
+          weight: 400   # Regular
+
+    # Roboto font family with multiple weights
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto/Roboto-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto/Roboto-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Roboto/Roboto-Black.ttf
+          weight: 900
+          
+# ========================
+# Конфигурация генератора ресурсов
+# ========================
+flutter_gen:
+  # Папка для генерации типобезопасных ссылок на ресурсы
+  output: lib/gen/
+  # Максимальная длина строки
+  line_length: 80
+  # Интеграции с пакетами
+  integrations:
+    # Поддержка flutter_svg
+    flutter_svg: true
+
+# ========================
+# Конфигурация локализации
+# ========================
+flutter_intl:
+  # Включить генерацию локализации
+  enabled: true
+  # Имя класса локализации
+  class_name: S
+  # Основная локаль (русский)
+  main_locale: ru
+  # Папка с ARB файлами
+  arb_dir: lib/src/core/localization/l10n
+  # Папка для генерируемых файлов локализации
+  output_dir: lib/src/core/localization/generated
+  # Файл для непереведенных сообщений
+  untranslated_messages_file: lib/src/core/localization/l10n/untranslated_messages.txt
+
+# ========================
+# Конфигурация иконок приложения
+# ========================
+# flutter_launcher_icons:
+#   # Имя иконки для Android
+#   android: 'launcher_icon'
+#   # Генерировать иконку для iOS
+#   ios: true
+#   # Путь к исходному изображению иконки
+#   image_path: 'assets/icons/logo_rectangle.png'
+#   # Минимальная версия Android SDK
+#   min_sdk_android: 21
+#   # Убрать альфа-канал для iOS
+#   remove_alpha_ios: true
+  
+#   # Конфигурация для веб-платформы
+#   web:
+#     # Генерировать веб-иконку
+#     generate: true
+#     # Изображение для веб-иконки
+#     image_path: 'assets/icons/logo_rectangle.png'
+#     # Цвет фона веб-иконки
+#     background_color: '#3E9970'
+#     # Цвет темы веб-иконки
+#     theme_color: '#3E9970'
+  
+#   # Конфигурация для Windows
+#   windows:
+#     # Генерировать иконку для Windows
+#     generate: true
+#     # Изображение для Windows иконки
+#     image_path: 'assets/icons/logo_rectangle.png'
+#     # Размер иконки для Windows
+#     icon_size: 48
+  
+#   # Конфигурация для macOS
+#   macos:
+#     # Генерировать иконку для macOS
+#     generate: true
+#     # Изображение для macOS иконки
+#     image_path: 'assets/icons/logo_rectangle.png'
