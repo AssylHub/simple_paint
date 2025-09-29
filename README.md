@@ -1,16 +1,35 @@
-# simple_paint
+Simple Paint (Flutter)
 
-A new Flutter project.
+A minimal drawing app built with Flutter. Create sketches with touch, choose colors and stroke widths, undo/redo strokes, and export your canvas as an image. Great for practicing custom painters, gestures, and state management.
 
-## Getting Started
+✨ Features
 
-This project is a starting point for a Flutter application.
+Free-draw with finger/mouse
 
-A few resources to get you started if this is your first Flutter project:
+Color picker & stroke width slider
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Undo / Redo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clear canvas
+
+Save/export drawing as PNG
+
+Responsive (mobile/desktop)
+
+🧰 Tech Stack
+
+Flutter (CustomPainter, GestureDetector)
+
+State management: Bloc
+
+Path & Paint APIs
+
+📸 Screenshots / Demo
+
+<img width="1080" height="2160" alt="Screenshot_1759129125" src="https://github.com/user-attachments/assets/d1ad2331-8052-4b10-a6cb-a6ac3284ac1e" />
+<img width="1080" height="2160" alt="Screenshot_1759129129" src="https://github.com/user-attachments/assets/2c77491d-ed35-480e-9872-281bc038270b" />
+<img width="1080" height="2160" alt="Screenshot_1759129140" src="https://github.com/user-attachments/assets/e66d8b7d-3034-4bc6-8072-2ab4ee5c5ee0" />
+<img width="1080" height="2160" alt="Screenshot_1759129143" src="https://github.com/user-attachments/assets/b298c626-2dec-42eb-bea7-018ac3c227f8" />
+
+
+
